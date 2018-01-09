@@ -48,17 +48,20 @@ var maxHeight = 108;
 var challenges = [];
 var days = [];
 var dateCalc = new Date(2018, 0, 1);
+var progress = [];
+var progressIndex = 0;
+var progressHeight = 0;
+
+canvas.width = document.body.width;
+canvas.height = document.body.height;
 
 do {
   days.push(dateCalc.getTime());
   dateCalc.setDate(dateCalc.getDate() + 1);
 } while (dateCalc.getFullYear() !== 2019);
 
-canvas.width = document.body.width;
-canvas.height = document.body.height;
-
 for (var i = 0; i < difficulties.length; i++) {
-  difficulties.pointData = [];
+  difficulties[i].pointData = [];
   maxHeight = Math.max(maxHeight, difficulties[i].total);
   
   for (var j = 0; j < days.length; j++) {
@@ -84,4 +87,23 @@ for (var i = 0/*difficulties.length - 1*/; i >= 0; i--) {
 
 // 1/8
 // 1. Time of Eve (6/6)
-//addEntry(6/6, Date(2018, 0, 8));
+/*addEntry(6/6, 1, 8);
+
+for (var i = 0; i < days.length; i++) {
+  
+}
+
+function addEntry(amt, mon, day) {
+  var time = (new Date(2018, mon - 1, day)).getTime();
+  var index = (progress.length && progress[progress.length - 1].time === time) ? progress.length - 1 : progress.length;
+
+  if (index === progress.length) {
+    progress[index] = {
+      time: time,
+      amt: amt
+    };
+  } else {
+    progress[index].amt += amt / maxHeight;
+  }
+}
+*/
