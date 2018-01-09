@@ -97,7 +97,7 @@ ctx.moveTo(0, canvas.height);
 
 for (var i = 0; i < days.length; i++) {
   if (progressIndex < progress.length && progress[progressIndex].time === days[i]) {
-    progressHeight += progress[progressIndex].amt;
+    progressHeight = progress[progressIndex].amt;
     progressIndex++;
   }
   
