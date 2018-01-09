@@ -55,6 +55,8 @@ var progressHeight = 0;
 canvas.width = document.body.getBoundingClientRect().width;
 canvas.height = document.body.getBoundingClientRect().height;
 
+ctx.globalAlpha = 0.125;
+
 do {
   days.push(dateCalc.getTime());
   dateCalc.setDate(dateCalc.getDate() + 1);
@@ -74,7 +76,7 @@ for (var i = 0; i < difficulties.length; i++) {
 }
 
 for (var i = 0/*difficulties.length - 1*/; i >= 0; i--) {
-  ctx.fillStyle = '#' + parseInt((i + 1) / difficulties.length * 255).toString(16) + '0000';console.log(parseInt((i + 1) / difficulties.length * 255).toString(16));
+  ctx.fillStyle = 'rgb(255, 0, 0)';
   ctx.moveTo(difficulties[i].pointData[0].x, canvas.height - difficulties[i].pointData[0].y);
   
   for (var j = 1; j < difficulties[i].pointData.length; j++) {
