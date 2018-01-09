@@ -74,14 +74,14 @@ for (var i = 0; i < difficulties.length; i++) {
 }
 
 for (var i = 0/*difficulties.length - 1*/; i >= 0; i--) {
-  ctx.fillStyle = 'rgb(' + parseInt((i + 1) / difficulties.length * 255) + ', 0, 0)';
-  ctx.moveTo(difficulties[i].pointData[0].x, difficulties[i].pointData[0].y);
+  ctx.fillStyle = '#' + parseInt((i + 1) / difficulties.length * 255).toString(16) + '0000';console.log(parseInt((i + 1) / difficulties.length * 255).toString(16));
+  ctx.moveTo(difficulties[i].pointData[0].x, canvas.height - difficulties[i].pointData[0].y);
   
   for (var j = 1; j < difficulties[i].pointData.length; j++) {
-    ctx.lineTo(difficulties[i].pointData[j].x * canvas.width, difficulties[i].pointData[j].y * canvas.height);
+    ctx.lineTo(difficulties[i].pointData[j].x * canvas.width, canvas.height - difficulties[i].pointData[j].y * canvas.height);
   }
   
-  ctx.lineTo(canvas.width, 0);
+  ctx.lineTo(canvas.width, canvas.height);
   ctx.closePath();
   ctx.fill();
 }
