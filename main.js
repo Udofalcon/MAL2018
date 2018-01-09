@@ -52,8 +52,8 @@ var progress = [];
 var progressIndex = 0;
 var progressHeight = 0;
 
-canvas.width = document.body.width;
-canvas.height = document.body.height;
+canvas.width = document.body.getBoundingClientRect().width;
+canvas.height = document.body.getBoundingClientRect().height;
 
 do {
   days.push(dateCalc.getTime());
