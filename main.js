@@ -94,8 +94,9 @@ addEntry(6/6, 1, 8);
 
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
+ctx.globalAlpha = 1;
 
-for (var i = 0; i < days.length; i++) {console.log(progressHeight, progressHeight * canvas.height);
+for (var i = 0; i < days.length; i++) {
   if (progressIndex < progress.length && progress[progressIndex].time === days[i]) {
     progressHeight += progress[progressIndex].amt;
     progressIndex++;
