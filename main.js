@@ -29,7 +29,7 @@ var difficulties = [
     name: 'King',
     tier1: 7,
     tier2: 24,
-    tier3: 29
+    tier3: 29,
     total: 60
   }, {
     name: 'Hardcore',
