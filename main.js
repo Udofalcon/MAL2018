@@ -76,7 +76,7 @@ for (var i = 0; i < difficulties.length; i++) {
 }
 
 for (var i = 0; i < difficulties.length; i++) {
-  ctx.fillStyle = 'rgb(255, 0, 0)';
+  ctx.fillStyle = '#FF0000';
   ctx.moveTo(difficulties[i].pointData[0].x, canvas.height - difficulties[i].pointData[0].y);
   
   for (var j = 1; j < difficulties[i].pointData.length; j++) {
@@ -90,11 +90,23 @@ for (var i = 0; i < difficulties.length; i++) {
 
 // 1/8
 // 1. Time of Eve (6/6)
-/*addEntry(6/6, 1, 8);
+addEntry(6/6, 1, 8);
+
+ctx.fillStyle = '#00FF00';
+ctx.moveTo(0, canvas.height);
 
 for (var i = 0; i < days.length; i++) {
+  if (progessIndex < progress.length && progress[progressIndex].time === days[i]) {
+    progressHeight += progress[progressIndex].amt;
+    progressIndex++;
+  }
   
+  ctx.lineTo(i / (days.length - 1) * canvas.width, canvas.height - progressHeight * canvas.height);
 }
+
+ctx.lineTo(canvas.width, canvas.height);
+ctx.closePath();
+ctx.fill();
 
 function addEntry(amt, mon, day) {
   var time = (new Date(2018, mon - 1, day)).getTime();
@@ -109,4 +121,3 @@ function addEntry(amt, mon, day) {
     progress[index].amt += amt / maxHeight;
   }
 }
-*/
