@@ -44,6 +44,20 @@ var difficulties = [
     total: 108
   }
 ];
+var maxHeight = 108;
+var challenges = [];
 
 canvas.width = document.body.width;
 canvas.height = document.body.height;
+
+for (var i = 0; i < difficulties.length; i++) {
+  difficulties.heightData = [];
+  maxHeight = Math.max(maxHeight, difficulties[i].total);
+  
+  for (var j = 0; j <= canvas.width; j++) {
+    difficulties[i].heightData[j] = (j / canvas.width) * (difficulties[i].total / maxHeight) * canvas.height;
+  }
+}
+
+// 1/8
+// challenges += 6/6; 1. Time of Eve
