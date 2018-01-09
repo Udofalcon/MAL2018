@@ -115,7 +115,7 @@ function addEntry(amt, mon, day) {
   if (index === progress.length) {
     progress[index] = {
       time: time,
-      amt: amt
+      amt: amt / maxHeight
     };
   } else {
     progress[index].amt += amt / maxHeight;
