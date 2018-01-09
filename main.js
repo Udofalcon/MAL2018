@@ -75,7 +75,7 @@ for (var i = 0; i < difficulties.length; i++) {
   }
 }
 
-for (var i = 0/*difficulties.length - 1*/; i >= 0; i--) {
+for (var i = 0; i < difficulties.length; i++) {
   ctx.fillStyle = 'rgb(255, 0, 0)';
   ctx.moveTo(difficulties[i].pointData[0].x, canvas.height - difficulties[i].pointData[0].y);
   
