@@ -78,9 +78,10 @@ for (var i = 0/*difficulties.length - 1*/; i >= 0; i--) {
   ctx.moveTo(difficulties[i].pointData[0].x, difficulties[i].pointData[0].y);
   
   for (var j = 1; j < difficulties[i].pointData.length; j++) {
-    ctx.lineTo(difficulties[i].pointData[j].x, difficulties[i].pointData[j].y);
+    ctx.lineTo(difficulties[i].pointData[j].x * canvas.width, difficulties[i].pointData[j].y * canvas.height);
   }
   
+  ctx.lineTo(canvas.width, 0);
   ctx.closePath();
   ctx.fill();
 }
