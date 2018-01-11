@@ -92,6 +92,10 @@ for (var i = 0; i < difficulties.length; i++) {
 // 1. Time of Eve (6/6)
 addEntry(6/6, 1, 8);
 
+// 1/10
+// 2. Saiki Kusuo no Ψ-nan (TV)
+addEntry(25/120, 1, 8);
+
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
 ctx.globalAlpha = 1;
