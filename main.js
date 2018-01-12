@@ -94,7 +94,9 @@ addEntry(6/6, 1, 8);
 
 // 1/10
 // 2. Saiki Kusuo no Ψ-nan (TV)
-addEntry(25/120, 1, 8);
+addEntry(25/120, 1, 10);
+// 1/11
+addEntry(10/120, 1, 11); // 35/120
 
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
