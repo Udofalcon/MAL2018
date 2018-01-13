@@ -97,6 +97,8 @@ addEntry(6/6, 1, 8);
 addEntry(25/120, 1, 10);
 // 1/11
 addEntry(10/120, 1, 11); // 35/120
+// 1/13
+addEntry(35/120, 1, 13); // 70/120
 
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
