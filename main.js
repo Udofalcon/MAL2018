@@ -93,12 +93,21 @@ for (var i = 0; i < difficulties.length; i++) {
 addEntry(6/6, 1, 8);
 
 // 1/10
-// 2. Saiki Kusuo no Ψ-nan (TV)
+// 2. Saiki Kusuo no Ψ-nan (TV) (25/120)
 addEntry(25/120, 1, 10);
 // 1/11
-addEntry(10/120, 1, 11); // 35/120
+// 2. Saiki Kusuo no Ψ-nan (TV) (35/120)
+addEntry(10/120, 1, 11);
 // 1/13
-addEntry(35/120, 1, 13); // 70/120
+// 2. Saiki Kusuo no Ψ-nan (TV) (70/120)
+addEntry(35/120, 1, 13);
+// 1/14
+// 2. Saiki Kusuo no Ψ-nan (TV) (120/120)
+addEntry(50/120, 1, 14);
+
+// 1/15
+// 3. Shelter (1/1)
+addEntry(1/1, 1, 15);
 
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
