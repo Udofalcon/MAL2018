@@ -110,6 +110,8 @@ addEntry(50/120, 1, 14);
 addEntry(1/1, 1, 15);
 // 4. Kimi no Na wa. (Your Name.) (1/1)
 addEntry(1/1, 1, 15);
+// 5. Your lie in April (4/?)
+//addEntry(4/?, 1, 15);
 
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
