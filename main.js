@@ -89,29 +89,27 @@ for (var i = 0; i < difficulties.length; i++) {
 }
 
 // 1/8
-// 1. Time of Eve (6/6)
+// 1. Time of Eve (6/6) [] {42.25%}
 addEntry(6/6, 1, 8);
-
 // 1/10
-// 2. Saiki Kusuo no Ψ-nan (TV) (25/120)
+// 2. Saiki Kusuo no Ψ-nan (TV) (25/120) [] {40.84%}
 addEntry(25/120, 1, 10);
 // 1/11
-// 2. Saiki Kusuo no Ψ-nan (TV) (35/120)
+// 2. Saiki Kusuo no Ψ-nan (TV) (35/120) [] {39.69%}
 addEntry(10/120, 1, 11);
 // 1/13
-// 2. Saiki Kusuo no Ψ-nan (TV) (70/120)
+// 2. Saiki Kusuo no Ψ-nan (TV) (70/120) [] {}
 addEntry(35/120, 1, 13);
 // 1/14
 // 2. Saiki Kusuo no Ψ-nan (TV) (120/120)
 addEntry(50/120, 1, 14);
-
 // 1/15
 // 3. Shelter (1/1)
 addEntry(1/1, 1, 15);
 // 4. Kimi no Na wa. (Your Name.) (1/1)
 addEntry(1/1, 1, 15);
-// 5. Your lie in April (4/?)
-//addEntry(4/?, 1, 15);
+// 5. Shigatsu wa Kimi no Uso (4/22)
+addEntry(4/22, 1, 15);
 
 ctx.fillStyle = '#00FF00';
 ctx.moveTo(0, canvas.height);
